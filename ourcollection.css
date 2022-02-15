@@ -1,0 +1,30 @@
+.Our-collection{
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+
+}
+
+.container1{display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 2%;
+    border: 5px solid black;
+
+}
+
+.rect{
+  
+}
+.Men{
+    font-size: 1rem;
+
+}
+
+.Men-photo{
+ background-image: url("image/mensolo.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: bottom right ; 
+}

@@ -1,0 +1,112 @@
+body{
+     background: rgb(148, 140, 194);
+    ;
+}
+
+.main-container{
+    margin: 0% ;
+    padding: 0% 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center;
+    /* background-color: brown; */
+    flex-grow: 1;
+}
+
+.main-container .New-collection{
+        font-display: wrap;
+        text-align: right;
+        border-right: 2px;
+        border-color: black;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: flex-start;
+        margin: 2rem;
+        flex-direction: column;
+        
+    }
+
+ .New-collection .smalltext{
+     text-align: end;
+ }   
+
+.bigtext{
+    font-size: 2.8rem  ;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    
+}
+
+.smalltext{
+    margin: 0%;
+    padding: 0%;
+    font-size: 1.125rem;
+    font-style:normal;
+    font-display: wrap;
+    color: white;
+    margin-bottom: 5rem;
+
+    } 
+
+ .price{
+     display: flex;
+     justify-content: flex-end;
+     margin: 0%;
+     padding: 24px;
+     align-items: space-around; 
+     flex-direction: row;  
+     font-size: 1.125rem;
+    }
+
+
+    .main-container .image-wrapper{
+        flex-grow: 1;
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        
+    }
+    .main-container .guitar-photo{
+      background-image: url(image/guitar.png)  ;
+      flex-grow: 1;
+      max-height: 90vh;
+      min-width: 40vw ;
+      
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom right ; 
+  }  
+
+  @media (max-width: 700px) {
+      .guitar-photo{
+        max-height: 50vh;
+        min-width: 20vw ;
+         
+      }
+     
+      .main-container{
+          justify-content: center;
+      }
+      .big-text{
+          font-size: 3rem;
+      }
+      
+  }
+  @media (max-width: 500px) {
+    .guitar-photo{
+        display: none;
+    }
+    .big-text{
+        font-size: 3rem;
+    }
+}
